@@ -7,9 +7,9 @@
     ‒ Team under class organization will be created
     ‒ Members of the team added to it
     ‒ Team repository (of the same name as the team) will be created
-- Team Members
+- Vishal Aiely, Braxton Haynie, Colter Swanson
 
-## Introduction
+## Introduction - BRAXTON
 ‒ What is the project?
 ‒ What is the motivation for the project?
 ‒ Place your project in the context of the market
@@ -17,7 +17,7 @@
     - If not novel, what existing software does it resemble? How is it different? ‒ What are the backgrounds of the team members?
 ‒ Is there anything you’d like to include to orient the reader?
 
-## Customer Value
+## Customer Value - COLTER 
 - Customer Need
     ‒ Who is the primary customer?
     ‒ What does the customer want?
@@ -29,7 +29,7 @@
 - Measures of Success
     ‒ How will you know if customers got the benefits you want to provide? ‒ What are your customer-centric measures of success?
 
-## Section 3: Proposed Solution & Technology
+## Proposed Solution & Technology - BRAXTON
 -System: technology you deliver
     ‒ From the developer’s POV, what will your software do?
     ‒ What are the main components of your system? What do they do?
@@ -39,13 +39,13 @@
 - Tools: technology you use to build what you deliver ‒ What will you use to build the system?
     ‒ Are there available tools you can leverage?
 
-## Team
+## Team - COLTER
 - Skills
     ‒ Has anyone on the team built something like this before? ‒ Are the tools known or new to the team?
 - Roles
     ‒ What are the roles of the team members? ‒ Will the roles be fixed or rotating?
 
-## Project Management
+## Project Management - VISHAL
 - Schedule
     ‒ Is completion of the system feasible?
     ‒ When and how often will you meet? Face to face?
