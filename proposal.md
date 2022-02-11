@@ -50,6 +50,12 @@
     ‒ Is completion of the system feasible?
     ‒ When and how often will you meet? Face to face?
     ‒ Write a (tentative) week-by-week schedule for project tasks and deadlines
+    | Week | Tasks                                                                          |
+    |------|--------------------------------------------------------------------------------|
+    | 2/13 | Finish Proposal, Begin UI Design                                               |
+    | 2/20 | Gather user research for customer needs                                        |
+    | 2/27 | Begin initial UI component development & connection to view available packages |
+    | ...  | ...                                                                            |
 - Constraints
     ‒ Are there any regulatory, or legal constraints? ‒ Are there any ethical or social concerns?
 - Resources
