@@ -42,8 +42,17 @@
 ## Team - COLTER
 - Skills
     ‒ Has anyone on the team built something like this before? ‒ Are the tools known or new to the team?
+    Designing a user interface is not new to the team members of this team. All of us have some experience designing and implementing 
+    UI's. However, our experience is mainly with pyQT and other UI development tools. This will be the first time each of us is using 
+    Flutter and thus will be expecting a learning curve while developing the UI. 
 - Roles
     ‒ What are the roles of the team members? ‒ Will the roles be fixed or rotating?
+    The roles for our team will include a project manager and two frontend developers. The role of project manager will go to Braxton Haynie as 
+    he was the one that formed the project and has led the initial deign process. He will be tasked with keeping the project on track and 
+    managing the overall flow of the project. Since this project is a frontend project, there will be two frontend developers, Vishal Aiely and Colter
+    Swanson. They will be responsible for the layout of the user interface and how well it will communicate its features to the customer. The role of
+    tester will also be assigned. It will be assined as a rotating role among the three people on this project. The other roles assigned are fixed unless 
+    conflict arises later on in the project and change is needed. 
 
 ## Project Management - VISHAL
 - Schedule
