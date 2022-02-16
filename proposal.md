@@ -1,21 +1,11 @@
-## Title, Team Name, Team Members
-- Descriptive Title for the Project
-    ‒ Pick a title that will be meaningful on your resume
-- Team Name - Your choice: pick something fun or something professional or both
-- Team Name for Github
-    ‒ To be assigned, as teams are formed
-    ‒ Team under class organization will be created
-    ‒ Members of the team added to it
-    ‒ Team repository (of the same name as the team) will be created
-- Vishal Aiely, Braxton Haynie, Colter Swanson
+# Homebrew GUI
+### Team: Vishal Aiely, Braxton Haynie, Colter Swanson
+---
 
-## Introduction - BRAXTON
-‒ What is the project?
-‒ What is the motivation for the project?
-‒ Place your project in the context of the market
-    - Is your project idea novel? If so, what need does it fill?
-    - If not novel, what existing software does it resemble? How is it different? ‒ What are the backgrounds of the team members?
-‒ Is there anything you’d like to include to orient the reader?
+## Introduction
+This project is going to be intuitive easy to use GUI for the MacOS and Linux package manager Homebrew. The idea is to make a easy to use interface that also looks appealing to the users. The motivation for the project is to help make using homebrew easier and arguably less daunting for new user. It would also be nice to help the user visualize what packages have been downloaded by Homebrew. Another feature that would be useful to have is the ability to search packages based on their functionality not just their name.
+
+There is a GUI that has been created for Homebrew already, so this idea is not entirely original. However, the other GUI that is available does not allow for descriptive package search. Another big difference will be how the application will be developed. Our team will be using dart and flutter to develop the application, and the other GUI was developed using Objective-C and xCode. Another key feature that we hope to add is the ability for our Homebrew GUI to be compatable with both MacOX and Linux.
 
 ## Customer Value - COLTER 
 - Customer Need
