@@ -19,13 +19,16 @@ There is a GUI that has been created for Homebrew already, so this idea is not e
 - Measures of Success
     ‒ How will you know if customers got the benefits you want to provide? ‒ What are your customer-centric measures of success?
 
-## Proposed Solution & Technology - BRAXTON
+## Proposed Solution & Technology
 -System: technology you deliver
     ‒ From the developer’s POV, what will your software do?
     ‒ What are the main components of your system? What do they do?
     ‒ What is a high-level block diagram of the architecture of the system?
-    ‒ What is a minimal system that would have some value to the customer? ‒ What are some possible enhancements that customers would value?
+    ‒ What is a minimal system that would have some value to the customer?
+    ‒ What are some possible enhancements that customers would value?
     ‒ How will you test your system?
+
+The software will ultimately try to help the user to more easily use Homebrew and make it clear and concise as to what it is doing. There will be two main components of the code. There will be the code that runs the UI, and the code that calls and manages what homebrew is doing. A minimal system that would have value to a user would be a simple GUI that could be used to see what packages Homebrew has installed, and it would also allow the user to install new packages at the click of a button. In the early stages of development, we will be testing the application ourselves by simply running it and trying out commands. Once we get farther along in the development, we hope to get other users to help us test the application and provide feedback.
 
 The tools that will be used in the project are all open source and readily available to use along with extensive documentation. The tools that will be used are:
 - Homebrew -- The package manager the GUI is being created for
