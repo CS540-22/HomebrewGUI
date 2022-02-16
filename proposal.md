@@ -12,6 +12,10 @@ There is a GUI that has been created for Homebrew already, so this idea is not e
     ‒ Who is the primary customer?
     ‒ What does the customer want?
     ‒ Why? What is their underlying problem to solve or experience to have? ‒ Place your software in the context of the market.
+    
+    The primary customer for our Homebrew GUI are other software developers looking to find an easy way to manage their packages. The main want that our GUI will be addressing is the desire to have an easy to use functional interface that will allow developers to devote less time and effort to their package management. Providing users with an interface to help with package management will allow them to easily view the packages they have installed and a list of packages that can be installed. By providing this for the developer, they will be able to focus more on their code development and less on learning the nuances behind package management. 
+    
+    
 - Proposed Solution
     ‒ From the customer’s POV, what will your solution deliver?
     ‒ How will the customer benefit from your proposed solution?
