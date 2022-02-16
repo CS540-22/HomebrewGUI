@@ -5,17 +5,13 @@
 ## Introduction
 This project is going to be intuitive easy to use GUI for the MacOS and Linux package manager Homebrew. The idea is to make a easy to use interface that also looks appealing to the users. The motivation for the project is to help make using homebrew easier and arguably less daunting for new user. It would also be nice to help the user visualize what packages have been downloaded by Homebrew. Another feature that would be useful to have is the ability to search packages based on their functionality not just their name.
 
-There is a GUI that has been created for Homebrew already, so this idea is not entirely original. However, the other GUI that is available does not allow for descriptive package search. Another big difference will be how the application will be developed. Our team will be using dart and flutter to develop the application, and the other GUI was developed using Objective-C and xCode. Another key feature that we hope to add is the ability for our Homebrew GUI to be compatable with both MacOX and Linux.
+There is a GUI that has been created for Homebrew already, so this idea is not entirely original. However, the other GUI that is available does not allow for descriptive package search. Another big difference will be how the application will be developed. Our team will be using dart and flutter to develop the application, and the other GUI was developed using Objective-C and xCode. A key feature that we hope to add is the ability for our Homebrew GUI to be compatable with both MacOX and Linux.
 
 ## Customer Value - COLTER 
 - Customer Need
     ‒ Who is the primary customer?
     ‒ What does the customer want?
     ‒ Why? What is their underlying problem to solve or experience to have? ‒ Place your software in the context of the market.
-    
-    The primary customer for our Homebrew GUI are other software developers looking to find an easy way to manage their packages. The main want that our GUI will be addressing is the desire to have an easy to use functional interface that will allow developers to devote less time and effort to their package management. Providing users with an interface to help with package management will allow them to easily view the packages they have installed and a list of packages that can be installed. By providing this for the developer, they will be able to focus more on their code development and less on learning the nuances behind package management. 
-    
-    
 - Proposed Solution
     ‒ From the customer’s POV, what will your solution deliver?
     ‒ How will the customer benefit from your proposed solution?
@@ -30,8 +26,12 @@ There is a GUI that has been created for Homebrew already, so this idea is not e
     ‒ What is a high-level block diagram of the architecture of the system?
     ‒ What is a minimal system that would have some value to the customer? ‒ What are some possible enhancements that customers would value?
     ‒ How will you test your system?
-- Tools: technology you use to build what you deliver ‒ What will you use to build the system?
-    ‒ Are there available tools you can leverage?
+
+The tools that will be used in the project are all open source and readily available to use along with extensive documentation. The tools that will be used are:
+- Homebrew -- The package manager the GUI is being created for
+- Flutter -- An open source SDK and UI library that is being used to create the UI 
+- Dart -- Programming language that is being used on the project
+
 
 ## Team - COLTER
 - Skills
@@ -53,22 +53,12 @@ There is a GUI that has been created for Homebrew already, so this idea is not e
     ‒ Is completion of the system feasible?
     ‒ When and how often will you meet? Face to face?
     ‒ Write a (tentative) week-by-week schedule for project tasks and deadlines
-    
-    The schedule consists of first identifying the problem we want to solve by building our tool, and then by figuring out whether our idea solves the problem.We will accomplish these first stages by creating some inital design mock-ups and technical architectures to showcase the functionality of the system.Then we will present these designs to potential users in order to get feedback which will help us understand to which extent our solution sovles the root problem.This entire process will be completed within the begin weeks of the project (2/13-3/6).Afterwards, we will refine our problem and solution definition to better suit the feedback given by our inital user.We will begin to develop a backend that allows us to download and search through existing packages within the homebrew ecosystem.As we are devloping out inital backend, we will be finializing a mid-fidelity design mock-up that will be slightly more representative of the final look of the project.These stages will be completed in the weeks of 3/7-3/20. Then the final stage of the product will be modifying the user interface to match the new design and connecting it to the backend, these portions should be completed from 3/21-4/10.
-
-The system, as we see now, is definitely feasibile from a technical and design standpoint.
-
-To ensure proper progress is being made towards a final solution, we will meet weekly over Discord.
-
-The tentative week-by-week schedule for the past and near future weeks are listed in the table below:
-    
     | Week | Tasks                                                                          |
     |------|--------------------------------------------------------------------------------|
     | 2/13 | Finish Proposal, Begin UI Design                                               |
     | 2/20 | Gather user research for customer needs                                        |
     | 2/27 | Begin initial UI component development & connection to view available packages |
     | ...  | ...                                                                            |
- 
 - Constraints
     ‒ Are there any regulatory, or legal constraints? ‒ Are there any ethical or social concerns?
 - Resources
