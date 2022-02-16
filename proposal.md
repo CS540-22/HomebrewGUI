@@ -49,12 +49,22 @@ There is a GUI that has been created for Homebrew already, so this idea is not e
     ‒ Is completion of the system feasible?
     ‒ When and how often will you meet? Face to face?
     ‒ Write a (tentative) week-by-week schedule for project tasks and deadlines
+    
+    The schedule consists of first identifying the problem we want to solve by building our tool, and then by figuring out whether our idea solves the problem.We will accomplish these first stages by creating some inital design mock-ups and technical architectures to showcase the functionality of the system.Then we will present these designs to potential users in order to get feedback which will help us understand to which extent our solution sovles the root problem.This entire process will be completed within the begin weeks of the project (2/13-3/6).Afterwards, we will refine our problem and solution definition to better suit the feedback given by our inital user.We will begin to develop a backend that allows us to download and search through existing packages within the homebrew ecosystem.As we are devloping out inital backend, we will be finializing a mid-fidelity design mock-up that will be slightly more representative of the final look of the project.These stages will be completed in the weeks of 3/7-3/20. Then the final stage of the product will be modifying the user interface to match the new design and connecting it to the backend, these portions should be completed from 3/21-4/10.
+
+The system, as we see now, is definitely feasibile from a technical and design standpoint.
+
+To ensure proper progress is being made towards a final solution, we will meet weekly over Discord.
+
+The tentative week-by-week schedule for the past and near future weeks are listed in the table below:
+    
     | Week | Tasks                                                                          |
     |------|--------------------------------------------------------------------------------|
     | 2/13 | Finish Proposal, Begin UI Design                                               |
     | 2/20 | Gather user research for customer needs                                        |
     | 2/27 | Begin initial UI component development & connection to view available packages |
     | ...  | ...                                                                            |
+ 
 - Constraints
     ‒ Are there any regulatory, or legal constraints? ‒ Are there any ethical or social concerns?
 - Resources
