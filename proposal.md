@@ -12,12 +12,20 @@ There is a GUI that has been created for Homebrew already, so this idea is not e
     ‒ Who is the primary customer?
     ‒ What does the customer want?
     ‒ Why? What is their underlying problem to solve or experience to have? ‒ Place your software in the context of the market.
+    
+    The primary customer for our Homebrew GUI are other software developers looking to find an easy way to manage their packages. The main want that our GUI will be addressing is the desire to have an easy to use functional interface that will allow developers to devote less time and effort to their package management. Providing users with an interface to help with package management will allow them to easily view the packages they have installed and a list of packages that can be installed. By providing this for the developer, they will be able to focus more on their code development and less on learning the nuances behind package management. 
+    
 - Proposed Solution
     ‒ From the customer’s POV, what will your solution deliver?
     ‒ How will the customer benefit from your proposed solution?
     ‒ Does it provide a new capability or is it much better, easier, faster ...? ‒ Have you tested the idea on anyone?
+    
+    In the eyes of our customers, our product will deliver an easy to use, visually appealing interface that will allow for ease of access to packages already installed and ones that could be installed. The main benefit from this product will be the time that will be saved getting used to using Homebrew in the command line. Instead, the interface will be clear enough and easy enough to use that the customer will be able to spend more time on their actual project and less time on the setup of their project. The product that we will be developing will provide a new search feature to homebrew that is currently not available and will make Homebrew faster, easier, and more navigable for new users. Our idea currently has not been tested on any individuals yet, however, we have had some peers show interest in our product. Once we have an initial build of the GUI we plan to test it using these individuals and some of our other peers. 
+    
 - Measures of Success
     ‒ How will you know if customers got the benefits you want to provide? ‒ What are your customer-centric measures of success?
+    
+    Since our product will not deliver many different services to the user and instead focus on usability, we hope to gather feedback through a rating system on the users experience using the interface. This will allow us to measure our success by viewing user feedback and their ratings to better improve our product. We will focus on the customers' views on the usability of the product and how much time our product saved them. 
 
 ## Proposed Solution & Technology
 -System: technology you deliver
