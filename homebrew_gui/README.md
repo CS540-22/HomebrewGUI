@@ -1,4 +1,4 @@
-# homebrew_gui
+# Homebrew GUI
 
 A new Flutter project.
 
@@ -14,3 +14,11 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## Running the application
+
+The application can be run using the command below where \<platform\> is substituted for the current operating system that is being used.
+
+```cmd
+flutter run -d <platform>
+```
