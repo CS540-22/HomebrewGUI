@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:homebrew_gui/side_panel.dart';
+import 'dart:io';
+import 'package:window_size/window_size.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  if (Platform.isLinux || Platform.isMacOS) {
+    setWindowMinSize(const Size(400, 300));
+    setWindowMaxSize(Size.infinite);
+  }
   runApp(const MyApp());
 }
 
@@ -11,7 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Homebrew GUI',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -61,21 +69,22 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void _decrementCounter() {
+    setState(() {
+      _counter--;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Center(
+      body: Row(
+        children: <Widget>[
+          SidePanel(),
+          Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
         child: Column(
@@ -105,11 +114,33 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+
+        ],
+      ),
+      floatingActionButton: Stack(
+        children: [
+          Positioned(
+            right: 30,
+            bottom: 20,
+            child: FloatingActionButton(
+              onPressed: _incrementCounter,
+              tooltip: 'Increment',
+              child: const Icon(Icons.add),
+            ),
+          ),
+          Positioned(
+            bottom: 20,
+            right: 100,
+            child: FloatingActionButton(
+              onPressed: _decrementCounter,
+              tooltip: 'Decrement',
+              child: const Icon(Icons.remove),
+            ),
+          ),
+        ],
+      ),
+      // Add more floating buttons if you want
+      // There is no limit
     );
   }
 }
