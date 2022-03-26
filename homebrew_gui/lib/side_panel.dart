@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'button_panel.dart';
 
 class SidePanel extends StatelessWidget {
   SidePanel({Key? key}) : super(key: key);
 
   final panel = Container(
-    width: 150,
+    width: 200,
     alignment: Alignment.topLeft,
     margin: const EdgeInsets.all(8.0),
     padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
@@ -17,20 +18,24 @@ class SidePanel extends StatelessWidget {
           bottomLeft: Radius.circular(10.0)),
     ),
     child: Column(
-      children: const <Widget>[
+      children: <Widget>[
+        // ignore: prefer_const_constructors
         Text(
           'Menu',
           textAlign: TextAlign.center,
+          // ignore: prefer_const_constructors
           style: TextStyle(
             fontFamily: 'Righteous',
-            color: Color.fromARGB(255, 107, 21, 21),
+            color: const Color.fromARGB(255, 107, 21, 21),
             fontSize: 30,
             fontWeight: FontWeight.w400,
           ),
         ),
+        // ignore: prefer_const_constructors
         Divider(
           color: Colors.black,
-        )
+        ),
+        Expanded(flex: 9, child: ButtonPanel()),
       ],
     ),
   );

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:homebrew_gui/side_panel.dart';
 import 'package:homebrew_gui/search_bar.dart';
 import 'package:homebrew_gui/top_row.dart';
+import 'package:homebrew_gui/button_panel.dart';
 import 'dart:io';
 import 'package:window_size/window_size.dart';
 
@@ -70,6 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
         children: <Widget>[
           
           SidePanel(),
+          
           TopRow()
           
 
