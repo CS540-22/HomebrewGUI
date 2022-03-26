@@ -2,64 +2,76 @@ import 'package:flutter/material.dart';
 import 'globals.dart';
 
 class ButtonPanel extends StatelessWidget {
-
-
   final buttons = Container(
     child: Column(
-
-
-
       children: <Widget>[
-        
-        
-
         ElevatedButton(
-          onPressed: () { },
-          child: 
-            const Text('Download Packages (Current)'),
-        ),
-
-        ElevatedButton(
-          onPressed: () { },
-          child: 
-            const Text('Common Packages (Page)'),
-        ),
-        ElevatedButton(
-          onPressed: () { },
+          onPressed: () {},
           style: style1,
-          child: 
-            const Text('Updates'),
+          child: const Text('Download Packages (Current)'),
         ),
+
+        const SizedBox(
+          height: 10
+        ), 
+
         ElevatedButton(
-          onPressed: () { },
-          child: 
-            const Text('Doctor'),
+          onPressed: () {},
+          style: style1,
+          child: const Text('Common Packages (Page)'),
         ),
+        const SizedBox(
+          height: 10
+        ), 
+
         ElevatedButton(
-          onPressed: () { },
-          child: 
-            const Text('Uninstall'),
+          onPressed: () {},
+          style: style1,
+          child: const Text('Updates'),
         ),
-                ElevatedButton(
-          onPressed: () { },
-          child: 
-            const Text('Help'),
+
+        const SizedBox(
+          height: 10
+        ), 
+
+        ElevatedButton(
+          onPressed: () {},
+          style: style1,
+          child: const Text('Doctor'),
         ),
-                ElevatedButton(
-          onPressed: () { },
-          child: 
-            const Text('Documentation'),
+
+        const SizedBox(
+          height: 10
+        ), 
+
+        ElevatedButton(
+          onPressed: () {},
+          style: style1,
+          child: const Text('Uninstall'),
         ),
+
+        const SizedBox(
+          height: 10
+        ), 
+
+        ElevatedButton(
+          onPressed: () {},
+          style: style1,
+          child: const Text('Help'),
+        ),
+
+        const SizedBox(
+          height: 10
+        ), 
         
-
-
+        ElevatedButton(
+          onPressed: () {},
+          style: style1,
+          child: const Text('Documentation'),
+        ),
       ],
     ),
   );
-
-
-
-
 
   ButtonPanel({Key? key}) : super(key: key);
   // const ButtonPanel({Key? key}) : super(key: key);

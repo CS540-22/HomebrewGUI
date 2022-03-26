@@ -34,7 +34,7 @@ class SidePanel extends StatelessWidget {
         Divider(
           color: Colors.black,
         ),
-        Expanded(flex: 9, child: ButtonPanel()),
+        Flexible(child: ButtonPanel())
       ],
     ),
   );

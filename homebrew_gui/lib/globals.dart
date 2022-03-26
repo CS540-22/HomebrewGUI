@@ -11,7 +11,7 @@ final ButtonStyle style1 =
             fontSize: 16,
           ),
           primary: const Color.fromARGB(255, 120, 120, 120),
-          fixedSize: const Size(180, 40),
+          fixedSize: const Size(500, 40),
 
 
           
