@@ -5,7 +5,6 @@ class SidePanel extends StatelessWidget {
   SidePanel({Key? key}) : super(key: key);
 
   final panel = Container(
-    width: 200,
     alignment: Alignment.topLeft,
     margin: const EdgeInsets.all(8.0),
     padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),

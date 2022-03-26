@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:homebrew_gui/middle_row.dart';
 import 'package:homebrew_gui/side_panel.dart';
 import 'package:homebrew_gui/search_bar.dart';
 import 'package:homebrew_gui/top_row.dart';
@@ -64,21 +65,20 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
-      
-
       body: Row(
         children: <Widget>[
-          
-          SidePanel(),
-          
-          TopRow()
-          
-
+          Expanded(flex: 3, child: SidePanel()),
+          Expanded(
+            flex: 7,
+            child: Column(
+              children: <Widget>[
+                Expanded(flex: 2, child: TopRow()),
+                Expanded(flex: 8, child: MiddleRow()),
+              ],
+            ),
+          ),
         ],
       ),
-      
-
     );
   }
 }
