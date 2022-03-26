@@ -78,3 +78,5 @@ flutter:
     - family: Righteous
       fonts:
         - asset: fonts/Righteous-Regular.ttf
+  assets:
+    - graphics/homebrew.png
