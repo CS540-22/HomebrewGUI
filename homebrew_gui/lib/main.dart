@@ -65,7 +65,6 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 229, 229, 229),
       body: Row(
         children: <Widget>[
           Expanded(flex: 3, child: SidePanel()),
@@ -73,29 +72,11 @@ class _MyHomePageState extends State<MyHomePage> {
             flex: 7,
             child: Column(
               children: <Widget>[
-                Expanded(flex: 1, child: TopRow()),
-                const Expanded(flex: 5, child: MiddleRow()),
-                const SizedBox(height: 10),
-                Expanded(
-                  flex: 2,
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      color: Color.fromARGB(255, 40, 44, 52),
-                      borderRadius: BorderRadius.only(
-                          topRight: Radius.circular(10.0),
-                          bottomRight: Radius.circular(10.0),
-                          topLeft: Radius.circular(10.0),
-                          bottomLeft: Radius.circular(10.0)),
-                    ),
-                    alignment: Alignment.center,
-                    child: const Text('Place holder'),
-                  ),
-                ),
-                const SizedBox(height: 10),
+                Expanded(flex: 2, child: TopRow()),
+                Expanded(flex: 8, child: MiddleRow()),
               ],
             ),
           ),
-          const SizedBox(width: 10)
         ],
       ),
     );
