@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'globals.dart';
 
 class ButtonPanel extends StatelessWidget {
-  final buttons = Container(
-    child: Column(
+  final buttons = Column(
       children: <Widget>[
         ElevatedButton(
           onPressed: () {},
@@ -69,8 +68,7 @@ class ButtonPanel extends StatelessWidget {
           style: style1,
           child: const Text('Documentation'),
         ),
-      ],
-    ),
+    ],
   );
 
   ButtonPanel({Key? key}) : super(key: key);
