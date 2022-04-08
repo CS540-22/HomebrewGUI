@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'list_dirs_async.dart';
+import 'list_dirs.dart';
 
 // File list will be used to display the files as packages that are available
 class FileList extends StatefulWidget {
@@ -10,7 +10,9 @@ class FileList extends StatefulWidget {
 }
 
 class _FileList extends State<FileList> {
-  List<String> pkgs = []; //listDirs('/usr/local/Cellar');
+  List<String> pkgs;
+
+  _FileList() : pkgs = listDirs('/usr/local/Cellar');
 
   @override
   Widget build(BuildContext context) {
