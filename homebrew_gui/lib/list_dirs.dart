@@ -5,7 +5,9 @@ List<String> listDirs(String path) {
   List<String> dirs = [];
   Directory dir = Directory(path);
   dir.listSync().forEach((f) {
-    dirs.add(basename(f.path));
+    if (f is Directory) {
+      dirs.add(basename(f.path));
+    }
   });
   dirs.sort();
   return dirs;
