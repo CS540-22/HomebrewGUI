@@ -1,18 +1,13 @@
 import 'package:flutter/material.dart';
 
-
 class MySearchBarState extends StatelessWidget {
-
   MySearchBarState({Key? key}) : super(key: key);
 
   static final myController = TextEditingController();
 
-  
   void dispose() {
     myController.dispose();
   }
-
-
 
   final bar = Align(
     alignment: Alignment.topRight,
@@ -35,14 +30,10 @@ class MySearchBarState extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           TextField(
-            onSubmitted: (value){
+            onSubmitted: (value) {
               print(value);
-              // returns the value of the search bar after enter is pressed. 
+              // returns the value of the search bar after enter is pressed.
               // handle the search here with value
-
-
-
-              
             },
             controller: myController,
             decoration: const InputDecoration(
