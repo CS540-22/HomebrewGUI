@@ -8,7 +8,7 @@ class TopRow extends StatelessWidget {
   final toprow = Row(
     children: <Widget>[
       Expanded(flex: 5, child: TitleText()),
-      Expanded(flex: 5, child: MySearchBarState()),
+      const Expanded(flex: 5, child: MySearchBarState()),
     ],
   );
 
