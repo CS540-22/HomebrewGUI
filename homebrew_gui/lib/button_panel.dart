@@ -13,7 +13,7 @@ void _brewdoctor() async {
   print('brew doctor done');
 }
 
-_brewupdate() async {
+Future<String> _brewupdate() async {
   var stdout = '';
   print('Starting brew update\nwait...');
   await Process.run('brew', ['update']).then((ProcessResult pr) {
@@ -24,12 +24,14 @@ _brewupdate() async {
   if (stdout != 'Already up-to-date.\n') {
     await Process.run('brew', ['upgrade']).then((ProcessResult pr) {
       print(pr.exitCode);
+      stdout = pr.stdout;
       print(pr.stdout);
       print(pr.stderr);
     });
   }
   print('Already up-to-date.');
   print('brew update done');
+  return stdout;
 }
 
 Future<List> _brewuninstall(String package) async {
@@ -194,7 +196,26 @@ class ButtonPanel extends StatelessWidget {
         ),
         const SizedBox(height: 10),
         ElevatedButton(
-          onPressed: _brewupdate,
+          onPressed: () async {
+            await _brewupdate().then((String result) {
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  backgroundColor: const Color.fromARGB(254, 143, 162, 255),
+                  content: Text(result),
+                  duration: const Duration(minutes: 2),
+                  width: 500, // Width of the SnackBar.
+                  behavior: SnackBarBehavior.floating,
+                  action: SnackBarAction(
+                    textColor: const Color.fromARGB(255, 107, 21, 21),
+                    label: 'Close',
+                    onPressed: () {
+                      // Code to execute.
+                    },
+                  ),
+                ),
+              );
+            });
+          },
           style: style1,
           child: const Text('Updates'),
         ),
