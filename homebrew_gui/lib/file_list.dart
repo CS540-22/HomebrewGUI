@@ -29,7 +29,7 @@ class _FileList extends State<FileList> {
             backgroundColor: const Color.fromARGB(254, 143, 162, 255),
             toolbarHeight: 25,
             title: const Text(
-              'Press on the refresh button to see what packages are downloaded',
+              'Press the button to refresh the package list',
               style: TextStyle(fontSize: 15),
             ),
             leading: IconButton(
