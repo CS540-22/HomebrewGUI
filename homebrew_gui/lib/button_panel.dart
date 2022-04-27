@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'globals.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void _brewdoctor() async {
   print('Starting brew doctor\nwait...');
@@ -29,7 +30,6 @@ Future<String> _brewupdate() async {
       print(pr.stderr);
     });
   }
-  print('Already up-to-date.');
   print('brew update done');
   return stdout;
 }
@@ -72,11 +72,17 @@ Future<List> _brewinstall(String package) async {
   return [true, stdout];
 }
 
+void _launchURL(Uri _url) async {
+  if (!await launchUrl(_url)) throw 'Could not launch $_url';
+}
+
 class ButtonPanel extends StatelessWidget {
   ButtonPanel({Key? key}) : super(key: key);
   // const ButtonPanel({Key? key}) : super(key: key);
 
   final uninstallController = TextEditingController();
+  final Uri _url = Uri.parse(
+      'https://github.com/CS540-22/HomebrewGUI/tree/main/homebrew_gui');
 
   void clearText() {
     uninstallController.clear();
@@ -197,6 +203,22 @@ class ButtonPanel extends StatelessWidget {
         const SizedBox(height: 10),
         ElevatedButton(
           onPressed: () async {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                backgroundColor: const Color.fromARGB(254, 143, 162, 255),
+                content: const Text('Wait while Homebrew is updating...'),
+                duration: const Duration(minutes: 1),
+                width: 500, // Width of the SnackBar.
+                behavior: SnackBarBehavior.floating,
+                action: SnackBarAction(
+                  textColor: const Color.fromARGB(255, 107, 21, 21),
+                  label: 'Close',
+                  onPressed: () {
+                    // Code to execute.
+                  },
+                ),
+              ),
+            );
             await _brewupdate().then((String result) {
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
@@ -336,7 +358,18 @@ class ButtonPanel extends StatelessWidget {
         ),
         const SizedBox(height: 10),
         ElevatedButton(
-          onPressed: () {},
+          onPressed: () async {
+            _launchURL(_url);
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(
+                backgroundColor: Color.fromARGB(254, 143, 162, 255),
+                content: Text('Launched Documentation On Webpage'),
+                duration: Duration(milliseconds: 2500),
+                width: 500, // Width of the SnackBar.
+                behavior: SnackBarBehavior.floating,
+              ),
+            );
+          },
           style: style1,
           child: const Text('Documentation'),
         ),
