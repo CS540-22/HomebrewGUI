@@ -1,7 +1,9 @@
+import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'globals.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:http/http.dart' as http;
 
 void _brewdoctor() async {
   print('Starting brew doctor\nwait...');
@@ -29,6 +31,8 @@ Future<String> _brewupdate() async {
       print(pr.stdout);
       print(pr.stderr);
     });
+    print('brew update done');
+    return stdout;
   }
   print('brew update done');
   return stdout;
@@ -72,13 +76,26 @@ Future<List> _brewinstall(String package) async {
   return [true, stdout];
 }
 
+Future<dynamic> _brewcommonpkgs() async {
+  final response = await http.get(
+      Uri.parse('https://formulae.brew.sh/api/analytics/install/30d.json'));
+  if (response.statusCode == 200) {
+    // If the server did return a 200 OK response,
+    // then parse the JSON.
+    return jsonDecode(response.body);
+  } else {
+    // If the server did not return a 200 OK response,
+    // then throw an exception.
+    throw Exception('Failed to load album');
+  }
+}
+
 void _launchURL(Uri _url) async {
   if (!await launchUrl(_url)) throw 'Could not launch $_url';
 }
 
 class ButtonPanel extends StatelessWidget {
   ButtonPanel({Key? key}) : super(key: key);
-  // const ButtonPanel({Key? key}) : super(key: key);
 
   final uninstallController = TextEditingController();
   final Uri _url = Uri.parse(
@@ -196,7 +213,28 @@ class ButtonPanel extends StatelessWidget {
         ),
         const SizedBox(height: 10),
         ElevatedButton(
-          onPressed: () {},
+          onPressed: () async {
+            await _brewcommonpkgs().then((dynamic result) {
+              List<dynamic> packages = result['items'];
+              print(packages);
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  backgroundColor: const Color.fromARGB(254, 143, 162, 255),
+                  content: Text(packages.toString()),
+                  duration: const Duration(minutes: 2),
+                  width: 500, // Width of the SnackBar.
+                  behavior: SnackBarBehavior.floating,
+                  action: SnackBarAction(
+                    textColor: const Color.fromARGB(255, 107, 21, 21),
+                    label: 'Close',
+                    onPressed: () {
+                      // Code to execute.
+                    },
+                  ),
+                ),
+              );
+            });
+          },
           style: style1,
           child: const Text('Common Packages'),
         ),
