@@ -100,6 +100,7 @@ class ButtonPanel extends StatelessWidget {
   final uninstallController = TextEditingController();
   final Uri _url = Uri.parse(
       'https://github.com/CS540-22/HomebrewGUI/tree/main/homebrew_gui');
+  final Uri _url2 = Uri.parse('https://github.com/CS540-22/HomebrewGUI/issues');
 
   void clearText() {
     uninstallController.clear();
@@ -393,7 +394,18 @@ class ButtonPanel extends StatelessWidget {
         ),
         const SizedBox(height: 10),
         ElevatedButton(
-          onPressed: () {},
+          onPressed: () async {
+            _launchURL(_url2);
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(
+                backgroundColor: Color.fromARGB(254, 143, 162, 255),
+                content: Text('Opened help in browser'),
+                duration: Duration(milliseconds: 2500),
+                width: 500, // Width of the SnackBar.
+                behavior: SnackBarBehavior.floating,
+              ),
+            );
+          },
           style: style1,
           child: const Text('Help'),
         ),
@@ -404,7 +416,7 @@ class ButtonPanel extends StatelessWidget {
             ScaffoldMessenger.of(context).showSnackBar(
               const SnackBar(
                 backgroundColor: Color.fromARGB(254, 143, 162, 255),
-                content: Text('Launched Documentation On Webpage'),
+                content: Text('Launched documentation in browser'),
                 duration: Duration(milliseconds: 2500),
                 width: 500, // Width of the SnackBar.
                 behavior: SnackBarBehavior.floating,
