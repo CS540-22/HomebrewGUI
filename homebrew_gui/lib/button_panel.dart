@@ -215,12 +215,15 @@ class ButtonPanel extends StatelessWidget {
         ElevatedButton(
           onPressed: () async {
             await _brewcommonpkgs().then((dynamic result) {
-              List<dynamic> packages = result['items'];
-              print(packages);
+              List<String> pkgs = [];
+              for (var i = 0; (i < result['items'].length) && (i < 100); i++) {
+                pkgs.add(result['items'][i]['formula']);
+              }
+              print(pkgs);
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
                   backgroundColor: const Color.fromARGB(254, 143, 162, 255),
-                  content: Text(packages.toString()),
+                  content: Text(pkgs.toString()),
                   duration: const Duration(minutes: 2),
                   width: 500, // Width of the SnackBar.
                   behavior: SnackBarBehavior.floating,
