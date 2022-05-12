@@ -37,6 +37,8 @@
 ## Use Case 1: Find Package using description
 A user is attempting to find a specific package (terminal tool) that allows them to perform a task that they otherwise would not be able to complete. The user knows that they are looking for something to allow them to execute a type of file. Through the use of the search bar in HomebrewGUI, the user is able to type in the file type and the words 'compiler' or 'interpreter' which showcases a list of relevant packages/programs that the user can install. The user finds a package that has a description stating that it can run said file type. The user can easily click the `install` button and use the command in their terminal to run the file.
 
+## Test Case
+
 ## Initial Design Mockup
 ![Mockup Design](docs/mockup_jpgFile.jpg)
 
@@ -104,9 +106,19 @@ The easiest form of deployment for us as developers would be to keep the tool so
     | Week | Tasks                                                                          |
     |------|--------------------------------------------------------------------------------|
     | 2/13 | Finish Proposal, Begin UI Design                                               |
-    | 2/20 | Gather user research for customer needs                                        |
-    | 2/27 | Begin initial UI component development & connection to view available packages |
-    | ...  | ...                                                                            |
+    | 2/20 | Created a Use Case & Setup Repo|
+    | 2/27 | Diagram of Architecture |
+    | 3/6  | Mockup design of User Interface|
+    | 3/13 | Implemented Side Panel and Search Bar UI|
+    | 3/20 | Created a Test Case, Restructured Layout, Added and Formatted Necessary Buttons|
+    | 3/27 | Created Dynamic Scrollable File View, Example of Pull Request|
+    | 4/3  | Static Analysis Example, Connected app to Cellar File System, Directory Checking |
+    | 4/10 | Connected Search Bar to Homebrew Calls, Project Measurement Examples, Added Brew Doctor Functionality |
+    | 4/17 | Added Install Capabilities, Update API functionality, Deployment Example |
+    | 4/24 | Documentation API |
+    | 5/1  | Created Final Presentation, Finished up Button Functionailies |
+    | 5/8  | Created Final Project Report |
+
 
 - Constraints
 
@@ -125,3 +137,13 @@ The easiest form of deployment for us as developers would be to keep the tool so
 The process that was selected for the development of the Homebrew GUI tool is the iterative process. The iterative code development process is an agile-like process in which each iteration is a week or two with a design-build-test cycle approach. These short iterations allow for customer feedback to be readily applied to the next iteration. For our project, feedback will come from other computer science majors to better understand what should be done in the next iteration. The iterative design process also allows for testing at the end of each iteration, unlike the waterfall method. The waterfall method tests only towards the end of the project. The issue with testing being performed this late is that it makes it highly likely that bugs will be missed. This is not an ideal situation for any project; however, it is especially not ideal for the project in this class due to a fairly strict deadline. If bugs are left to the end of the course, the project could be in jeopardy of not being completed at all. 
 
 Another development process that was considered was the V process which uses a level approach to design and testing. The appeal of this process was the two fold approach of designing and testing the project on the fly. However, the big disadvantage of this approach is that it is eerily similar to the waterfall approach with how it can be difficult to adapt to requirements changes. This difficulty of not being able to easily adapt the project to requirement changes and the issues with late testing is why the team settled on using the iterative process of development because of its safeguards from these issues.
+
+## Lessons Learned & Future Work
+
+In the future we would like to develop the terminal widget to display output for different calls. This would allow for the output of what is usually displayed in the terminal when running brew calls to allow users that are unfamiliar with terminal to gently ease their way into it. The terminal widget would also allow for input to allow for more advanced brew calls. We would also like to add descriptions to the packages that are displayed in the main window and the common packages feature. This would allow for new users to easily distinguish between packages and their functionality. Overall polishing of the app would be needed as well. Since this is simply a proof of concept, the overall design would need to be polished more for it to be a finished product.
+
+Over the course of the Hombrew GUI app development, we learned how to use the  flutter SDK and the programming language Dart. We also learned how to properly manage the development of a software application. 
+
+
+
+
