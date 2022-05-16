@@ -38,6 +38,7 @@
 A user is attempting to find a specific package (terminal tool) that allows them to perform a task that they otherwise would not be able to complete. The user knows that they are looking for something to allow them to execute a type of file. Through the use of the search bar in HomebrewGUI, the user is able to type in the file type and the words 'compiler' or 'interpreter' which showcases a list of relevant packages/programs that the user can install. The user finds a package that has a description stating that it can run said file type. The user can easily click the `install` button and use the command in their terminal to run the file.
 
 ## Test Case
+A test case for our application is testing whether someone is able to manage the packages that they have efficiently, without the need to memorize terminal commands to do so. We can test whether our application properly displays all of the packages that are currently installed via Homebrew on the host's machine. Then we can test whether searching for and uninstalling a particular package can be completed using the user interface. Afterward, we can test to see if the package has been properly removed by testing to make sure it is not accessible in the terminal and that the files associated with it are deleted. Finally, we can also test if the user interface allows someone to search for the uninstalled package and reinstall it back. These test cases can validate that our application provides the necessary tools that a user would need to interact with Homebrew.
 
 ## Initial Design Mockup
 ![Mockup Design](docs/mockup_jpgFile.jpg)
@@ -143,7 +144,3 @@ Another development process that was considered was the V process which uses a l
 In the future we would like to develop the terminal widget to display output for different calls. This would allow for the output of what is usually displayed in the terminal when running brew calls to allow users that are unfamiliar with terminal to gently ease their way into it. The terminal widget would also allow for input to allow for more advanced brew calls. We would also like to add descriptions to the packages that are displayed in the main window and the common packages feature. This would allow for new users to easily distinguish between packages and their functionality. Overall polishing of the app would be needed as well. Since this is simply a proof of concept, the overall design would need to be polished more for it to be a finished product.
 
 Over the course of the Hombrew GUI app development, we learned how to use the  flutter SDK and the programming language Dart. We also learned how to properly manage the development of a software application using the common industry style of agile development. 
-
-
-
-
