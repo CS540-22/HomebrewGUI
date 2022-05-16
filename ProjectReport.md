@@ -142,7 +142,7 @@ Another development process that was considered was the V process which uses a l
 
 In the future we would like to develop the terminal widget to display output for different calls. This would allow for the output of what is usually displayed in the terminal when running brew calls to allow users that are unfamiliar with terminal to gently ease their way into it. The terminal widget would also allow for input to allow for more advanced brew calls. We would also like to add descriptions to the packages that are displayed in the main window and the common packages feature. This would allow for new users to easily distinguish between packages and their functionality. Overall polishing of the app would be needed as well. Since this is simply a proof of concept, the overall design would need to be polished more for it to be a finished product.
 
-Over the course of the Hombrew GUI app development, we learned how to use the  flutter SDK and the programming language Dart. We also learned how to properly manage the development of a software application. 
+Over the course of the Hombrew GUI app development, we learned how to use the  flutter SDK and the programming language Dart. We also learned how to properly manage the development of a software application using the common industry style of agile development. 
 
 
 
